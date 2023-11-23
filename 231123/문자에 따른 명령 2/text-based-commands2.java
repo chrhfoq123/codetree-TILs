@@ -11,18 +11,18 @@ public class Main {
         int dir = 0;
         String s = br.readLine();
 
-        int nx = 0, ny = 0;
         for(int i=0; i<s.length(); i++){
+            char c = s.charAt(i);
             if(s.charAt(i) == 'L'){
-                dir = (dir +3) % 4;
+                dir = (dir + 3) % 4;
             }else if(s.charAt(i) == 'R'){
                 dir = (dir + 1) % 4;
             }else{
-                nx = x + dx[dir];
-                ny = y + dy[dir];
+                x = x + dx[dir];
+                y = y + dy[dir];
             }
         }
 
-        System.out.print(nx + " " + ny);
+        System.out.print(x + " " + y);
     }
 }
