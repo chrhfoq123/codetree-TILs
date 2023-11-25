@@ -10,7 +10,7 @@ public class Main {
     public static int[] dy = {1, 0, 0, -1};
 
     public static boolean inRange(int x, int y){
-        return (x > 0 && x < n && y > 0 && y < n);
+        return (x >= 1 && x <= n && y >= 1 && y <= n);
     }
 
     public static void main(String[] args) throws IOException{
