@@ -12,7 +12,7 @@ public class Main {
     public static int[][] board;
 
     public static boolean inRange(int x, int y){
-        return (x >= 0 && x < n && y >= 0 && y < n);
+        return (x >= 0 && x < n && y >= 0 && y < m);
     }
 
     public static void main(String[] args) throws IOException{
